@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS marketlink CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\n-- Preferred installation is `php artisan migrate --seed`; this file is included for the submission deliverable.\n

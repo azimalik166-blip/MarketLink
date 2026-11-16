@@ -1,0 +1,3 @@
+<?php
+use Illuminate\Database\Migrations\Migration; use Illuminate\Database\Schema\Blueprint; use Illuminate\Support\Facades\Schema;
+return new class extends Migration { public function up(): void { Schema::create('markets',function(Blueprint $t){$t->id();$t->string('name');$t->text('address');$t->string('days')->nullable();$t->string('hours')->nullable();$t->decimal('latitude',10,8)->nullable();$t->decimal('longitude',11,8)->nullable();$t->string('map_provider')->default('OpenStreetMap');$t->boolean('is_active')->default(true);$t->timestamps();}); } public function down(): void {Schema::dropIfExists('markets');}};

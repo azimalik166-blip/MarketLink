@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2de"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+<rect width="520" height="520" rx="42" fill="url(#g)"/><circle cx="260" cy="195" r="145" fill="#ffffff" opacity=".55"/><path d="M170 220c0-70 42-108 90-108s90 38 90 108H170z" fill="#d68b43" stroke="#8e4a22" stroke-width="7"/><path d="M190 180c25 18 55 18 70 0s45-18 70 0" fill="none" stroke="#f2c075" stroke-width="14" stroke-linecap="round"/><path d="M205 142l18 16m25-23 18 16m25-11 18 16" stroke="#fff0cd" stroke-width="9" stroke-linecap="round"/>
+<rect x="46" y="392" width="428" height="78" rx="24" fill="#ffffff" opacity=".86"/><text x="260" y="423" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#173b34">Fruit Cake</text><text x="260" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#5a766e">MarketLink · Baked Goods</text>
+</svg>

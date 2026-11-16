@@ -1,0 +1,3 @@
+<?php
+use Illuminate\Database\Migrations\Migration; use Illuminate\Database\Schema\Blueprint; use Illuminate\Support\Facades\Schema;
+return new class extends Migration { public function up(): void { Schema::create('farmer_profiles',function(Blueprint $t){$t->id();$t->foreignId('user_id')->unique()->constrained()->cascadeOnDelete();$t->string('stall_name');$t->text('bio')->nullable();$t->string('operating_days')->nullable();$t->string('pickup_windows')->nullable();$t->string('address')->nullable();$t->decimal('latitude',10,8)->nullable();$t->decimal('longitude',11,8)->nullable();$t->enum('approval_status',['pending','approved','suspended'])->default('pending');$t->timestamps();}); } public function down(): void {Schema::dropIfExists('farmer_profiles');}};

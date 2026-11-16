@@ -1,0 +1,7 @@
+IMPORTANT
+
+This distribution intentionally does not include the local .env file from the source upload so private mail credentials are not duplicated into the distributable archive.
+
+Keep your existing C:\xampp\htdocs\MarketLink\.env and place this project over/merge into the same existing project folder, or copy your .env into the project root before running Laravel.
+
+No controller, model, migration, route, or database change is part of this UI redesign.

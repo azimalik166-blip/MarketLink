@@ -1,0 +1,19 @@
+{
+  "name":"marketlink/marketlink",
+  "type":"project",
+  "description":"MarketLink - modern local farmers market pre-order platform",
+  "require":{"php":"^8.2","laravel/framework":"^12.0","laravel/tinker":"^2.10"},
+  "require-dev":{"fakerphp/faker":"^1.24","laravel/pail":"^1.2","phpunit/phpunit":"^11.5"},
+  "autoload":{
+  "psr-4":{
+    "App\\":"app/",
+    "Database\\Factories\\":"database/factories/",
+    "Database\\Seeders\\":"database/seeders/"
+  },
+  "files":[]
+},
+  "autoload-dev":{"psr-4":{"Tests\\":"tests/"}},
+  "scripts":{"post-autoload-dump":["@php artisan package:discover --ansi"],"setup":["@php -r \"file_exists('.env') || copy('.env.example','.env');\"","@php artisan key:generate","@php artisan migrate --seed","npm install","npm run build"],"dev":["Composer\\Config::disableProcessTimeout","npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74,#86efac\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"]},
+  "extra":{"laravel":{"dont-discover":[]}},
+  "minimum-stability":"stable","prefer-stable":true
+}
